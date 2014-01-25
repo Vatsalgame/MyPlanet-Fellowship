@@ -4,6 +4,16 @@
 	<title>Jittery Joe's</title>
 </head>
 <body ng-controller="ReviewListCtrl">
+	<!-- Drawer -->
+	<div id="slide-menu">
+		<ul class="navigation">
+			<li><a href="#">Blend 1</a></li>
+			<li><a href="#">Blend 2</a></li>
+			<li><a href="#">Blend 3</a></li>
+			<li><a href="#">Blend 4</a></li>
+			<li><a href="#">Blend 5</a></li>
+		</ul>
+	</div>
 	<div class="main-wrapper">
 		<header class="row">
 			<img src="images/logo.png" />
@@ -12,6 +22,8 @@
 				Really good coffee
 			</div>
 		</header>
+
+		<div id="push"> <a href="#">Menu</a> </div>
 
 		<!-- Review form -->
 		<div class="review-form-wrapper row">
@@ -110,6 +122,8 @@
 	</div>
 
 		<!-- Load things -->
+		<!-- Adding jQuery -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<!-- Angular CDN -->
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"> </script>
 
@@ -124,6 +138,18 @@
 
 		<!-- Custom stylesheet -->
 		<link rel="stylesheet" href="style.css" />
+
+		<script>
+			$(document).ready(function () {
+			$('#push, #close').click(function () {
+				var $navigacia = $('body, #slide-menu'),
+				val = $navigacia.css('left') === '250px' ? '0px' : '250px';
+				$navigacia.animate({
+				left: val
+				}, 300)
+				});
+			});
+		</script>
 
 	</body>
 </html>
