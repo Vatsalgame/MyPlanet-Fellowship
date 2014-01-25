@@ -1,53 +1,100 @@
-body {
+body{
 	color: #453524;
 	font-family: 'Roboto Slab', sans-serif;
 	margin: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Roboto Slab', sans-serif;
-	font-weight: bold;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: bold;
 }
 
-header {
+header{
 	text-align: center;
 }
 
-header img {
+header img{
 	width: 150px;
 }
 
-header h1 {
+header h1{
 	font-size: 58px;
 }
 
-header .slogan {
+header .slogan{
 	font-size: 24px;
 }
 
-.main-wrapper {
+.main-wrapper{
 	margin: auto;
 	max-width: 800px;
 	width: 100%;
 }
 
-/**
- * Ratings
-**/
 .review-item,
 .review-rating {
 	display: inline-block;
 }
 
-/**
- * Footer
-**/
-footer .logo {
+footer .logo{
 	text-align: center;
 }
+
 footer .logo img {
 	width: 50px;
 }
+
 footer .logo .slogan {
 	font-size: 18px;
+}
+
+#slide-menu {
+margin-left: -250px;
+left: 0;
+width: 250px;
+background: #222;
+position: fixed;
+height: 100%;
+overflow-y: auto;
+z-index: 1000;
+font-family: Roboto, sans-serif;
+color: #fff;
+font-weight: 100;
+font-size: 1.5em;
+}
+.navigation {
+position: absolute;
+top: 0;
+width: 250px;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.navigation li {
+line-height: 40px;
+text-indent: 20px;
+}
+.navigation li a {
+color: #999;
+display: block;
+padding: 20px 0;
+text-decoration: none;
+-webkit-transition: all .3s ease-out;
+-moz-transition: all .3s ease-out;
+-o-transition: all .3s ease-out;
+transition: all .3s ease-out;
+}
+.navigation li a:hover {
+color: #fff;
+background: rgba(98,200,191,.5);
+text-decoration: none;
+padding-left: 20px;
+}
+.navigation li a:active, .navigation li a:focus {
+text-decoration: none
 }
