@@ -82,7 +82,7 @@ text-indent: 20px;
 .navigation li a {
 color: #999;
 display: block;
-padding: 20px 0;
+padding: 10px 0;
 text-decoration: none;
 -webkit-transition: all .3s ease-out;
 -moz-transition: all .3s ease-out;
